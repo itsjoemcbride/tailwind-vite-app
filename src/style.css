@@ -9,7 +9,7 @@ body {
 }
 
 button {
-  @apply my-6 mx-4 rounded bg-pink-600 p-2 font-bold text-white transition hover:bg-pink-700;
+  @apply my-6 mx-4 rounded bg-pink-500 p-2 font-bold text-white transition hover:bg-pink-700;
 }
 
 h2 {
