@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./src/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Joe | Personal</title>
   </head>
   <body>
-    <section id="Header">
-      <div>
-        <h1>Joe</h1>
+    <header class="flex justify-between border p-4 font-bold">
+      <div class="">
+        <logo>Joe</logo>
       </div>
-      <div>
+      <div class="flex gap-4">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
       </div>
-    </section>
-    <section id="Main">
+    </header>
+    <main>
+    <section id="Main" class="flex flex-col">
       <a
         href="https://twitter.com/horse_ebooks/status/218439593240956928?lang=en"
-        ><h1>Everything happens so much</h1>
+        ><h1 class="flex justify-center text-4xl font-bold mx-auto my-4 text-center">
+          Everything happens so much
+        </h1>
       </a>
-      <p>
+      <p class="">
         I don't really know what I'm doing, so I figured the best way to avoid
         imposter syndrome is to practice until I know that I am exactly where I
         deserve to be.
       </p>
-      <div>
+      <div class="flex justify-center gap-6">
         <a href="https://youtu.be/QQQmDwoFBy4"
           ><button>we know you're the sus imposter</button></a
         >
@@ -37,28 +41,32 @@
       </div>
       <img
         src="https://i.guim.co.uk/img/media/3aab8a0699616ac94346c05f667b40844e46322f/0_123_5616_3432/master/5616.jpg?width=700&quality=85&auto=format&fit=max&s=a476da702aff265ce6f586be1412b1e1"
+        class="mx-auto"
       />
-      <p>
+      <p class="mx-auto flex max-w-lg flex-row">
+        <div class="max-w-lg mx-auto text-center text-xl">
         I had no idea what to put here, so please enjoy this image of
         <s>hide the pain harold</s> me staying silent through the whole zoom
         meeting, but saying "thanks everyone" at the end to make it seem like I
         contributed...
+      </div>
       </p>
     </section>
-    <section id="Code">
+    <section id="Code" class="bg-gray-100">
       <h2>Now lets talk about how I don't know what I'm doing...</h2>
       <p>
         My code is an inefficient mess, but I guess this is why I work in
         testing and not development. Let's not talk about that, here's a wonky
         screenshot.
       </p>
-      <img src="images/code.png" />
+      <img src="images/code.png" class="drop-shadow-lg bg-white px-8 py-4 md:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl"/>
     </section>
     <section id="Skills">
       <h2>So, what do I know?</h2>
-      <div>
+      <div class="flex flex-row justify-center flex-wrap">
+        <div>
         <img src="./images/languages.png" />
-        <p>
+        <p class="text-left max-w-md ml-0">
           I've been learning and experimenting with frontend frameworks like the
           ones on this site. I'm excited to keep using them to learn more about
           what I'm doing.
@@ -68,11 +76,13 @@
         >
       </div>
       <div>
-        <img src="./images/languages.png" />
-        <p>
+        <img src="./images/tests.png" />
+        <p class="text-left flex flex-row">
+          <div class="text-xl text-left max-w-md">
           Like I said before, I'm too <b>wonky</b> to work on the front end, and
           that's okay, because companies won't let me anywhere near it, unless
           I'm trying to break it...
+        </div>
         </p>
         <a
           href="https://beebom.com/wp-content/uploads/2020/01/Hide-the-Pain-Harold-is-Imgur%E2%80%99s-Meme-of-the-Decade.jpg?w=3000&quality=75"
@@ -81,32 +91,35 @@
           </button></a
         >
       </div>
+    </div>
     </section>
-    <section id="Testimonials">
+    <section id="Testimonials" class="bg-gray-100">
       <h2>Get inspired. Listen to the professionals.</h2>
       <img src="./images/quote.png" />
     </section>
-    <section id="Footer">
-      <h2>I guess this is the end</h2>
-      <div>
-        <div>
-          <p>Personal</p>
-          <a href="#">Github</a>
-          <a href="#">LinkedIn</a>
+  </main>
+    <footer class="bg-pink-900 text-white pb-10">
+      <h2 class="text-left ml-8 py-4">I guess this is the end</h2>
+      <hr class="mx-8">
+      <div class="flex justify-around">
+        <div class="flex flex-col">
+          <p class="text-sm ml-0">PERSONAL</p>
+          <a href="#" class="footer-link">Github</a>
+          <a href="#" class="footer-link">LinkedIn</a>
         </div>
-        <div>
-          <p>Development</p>
-          <a href="#">HTML</a>
-          <a href="#">CSS</a>
-          <a href="#">Javascript</a>
+        <div class="flex flex-col">
+          <p class="text-sm ml-0">DEVELOPMENT</p>
+          <a href="#" class="footer-link">HTML</a>
+          <a href="#" class="footer-link">CSS</a>
+          <a href="#" class="footer-link">Javascript</a>
         </div>
-        <div>
-          <p>Testing</p>
-          <a href="#">Selenium IDE</a>
-          <a href="#">Jest</a>
-          <a href="#">Cucumber</a>
+        <div class="flex flex-col">
+          <p class="text-sm ml-0">TESTING</p>
+          <a href="#" class="footer-link">Selenium IDE</a>
+          <a href="#" class="footer-link">Jest</a>
+          <a href="#" class="footer-link">Cucumber</a>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

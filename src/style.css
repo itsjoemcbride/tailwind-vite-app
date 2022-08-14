@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  @apply my-6 mx-4 rounded bg-pink-600 p-2 font-bold text-white transition hover:bg-pink-700;
+}
+
+h2 {
+  @apply mx-auto max-w-xl text-center text-3xl font-bold;
+}
+
+p {
+  @apply mx-auto mt-6 flex max-w-2xl justify-center text-center text-xl;
+}
+
+section {
+  @apply py-16 px-4;
+}
+
+img {
+  @apply my-8 mx-auto max-w-xs justify-center sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-xl 2xl:max-w-2xl;
+}
+
+a {
+}
+
+.footer-link {
+  @apply text-sm text-gray-400 hover:text-white;
+}
