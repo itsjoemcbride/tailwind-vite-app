@@ -30,6 +30,9 @@ img {
 
 a {
 }
+.header-link {
+  @apply p-4 transition  hover:bg-gray-100 hover:text-pink-500;
+}
 
 .footer-link {
   @apply text-sm text-gray-400 hover:text-white;
